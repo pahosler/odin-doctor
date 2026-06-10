@@ -40,3 +40,17 @@ See issues for open discussions. We are keeping scope focused and moving one ite
 ## License
 
 To be determined (likely MIT or similar for a CLI tool).
+
+## Project Tracking
+
+This project uses GitHub Issues with labels to simulate a kanban board:
+
+- `kanban:backlog`
+- `kanban:ready`
+- `kanban:in-progress` (aim for one at a time)
+- `kanban:done`
+- `kanban:discussion`
+
+See the issues for detailed Q&A, feature discussions, and task breakdown. The main "Project Q&A and Open Decisions" issue is where pending answers will be captured.
+
+Repo: https://github.com/pahosler/odin-doctor
