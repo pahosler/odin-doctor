@@ -1,0 +1,12 @@
+# Mixed ~/.zshrc with old Odin lines and other config
+
+export PATH="$HOME/bin:$PATH"
+
+# Old Odin (not managed)
+export ODIN_ROOT="/Users/someone/.local/Odin"
+export PATH="$ODIN_ROOT:$PATH"
+
+# Other stuff
+alias ll='ls -alF'
+export HISTSIZE=10000
+export HISTFILESIZE=20000

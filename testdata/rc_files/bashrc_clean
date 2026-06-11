@@ -1,0 +1,9 @@
+# Example clean ~/.bashrc
+
+export PATH="$HOME/bin:$PATH"
+
+# Aliases
+alias ll='ls -alF'
+
+# Prompt
+PS1='\u@\h:\w\$ '

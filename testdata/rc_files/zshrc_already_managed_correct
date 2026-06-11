@@ -1,0 +1,9 @@
+# Example ~/.zshrc that has already been managed by odin-doctor
+
+# MANAGED BY ODIN-UPDATE
+export ODIN_ROOT="/current/odin/install/path"
+export PATH="$ODIN_ROOT:$PATH"
+
+# User customizations below the managed block
+alias ll='ls -alF'
+export EDITOR=nvim

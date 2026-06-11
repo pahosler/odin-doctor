@@ -14,24 +14,65 @@ odin-doctor aims to be the reliable way to install, update, diagnose, and mainta
 
 ## Current Status
 
-This project is in early planning / alpha stage (target 0.1.0).
+Early alpha / perpetual beta stage.
 
-Core ideas evolved from the original `odin-update` script, which provided robust install/update with staging and verification.
+**Versioning**: Simple scheme — 0.1 through 0.9, then 0.10, 0.11, ... We only consider 1.0 once all open issues have been cleared and remained clear for a sustained period.
 
-## Direction
+We're starting implementation by "playing with Odin":
+- Local version check vs. latest from GitHub releases.
+- File I/O (starting with a simple `~/.config/odin-doctor/odin-doctor.conf`).
+- Basic tests using Odin's built-in `odin test` + `core:testing`.
 
-See GitHub Issues and the project kanban (via labels or Projects board) for detailed Q&A, feature discussions, and task breakdown.
+See the GitHub Issues (labeled with `kanban:*`) for the full backlog of Q&A and features. We move one focused item at a time.
 
-High-level goals include:
-- Subcommands for install, update, check/diagnostics, configuration, maintenance.
-- Strong handling of ODIN_ROOT, PATH, and shell rc files with consent and management markers.
-- Support for --dry-run, --to for alternate locations, --version, etc.
-- Diagnostics and "fix" capabilities.
-- Clear separation of concerns and incremental development.
+## Config
 
-## Getting Started (future)
+User configuration lives at `~/.config/odin-doctor/odin-doctor.conf` (simple `key=value` format for now).
 
-(Placeholder - will be filled as the tool is built.)
+The app populates sensible defaults. Users can override by editing the file directly or via future CLI flags/options. Keep it stupid simple.
+
+Example (generated defaults):
+```
+default_command=check
+```
+
+## Language & Philosophy
+
+We're experimenting with **Odin** as the implementation language (self-hosting appeal + ecosystem fit for Odin users who might contribute). Rust or Go are fallbacks if needed.
+
+Development is incremental: start small (version check, file I/O, tests), add robustness and subcommands as we go. Safety and user consent remain non-negotiable.
+
+## Getting Started (early)
+
+(Coming soon — once basic `check` and config are solid.)
+
+```bash
+# After building
+./odin-doctor --help
+./odin-doctor check
+```
+
+Build with: `odin build main.odin -o:odin-doctor`
+
+Test with: `odin test .`
+
+## Contributing & Issues
+
+See the kanban-style issues. We keep scope tight and discuss one thing at a time in chat before landing code or big decisions.
+
+## License
+
+To be decided (likely MIT).
+
+## Project Tracking
+
+This project uses GitHub Issues with labels to simulate a kanban board:
+
+- `kanban:backlog`
+- `kanban:ready`
+- `kanban:in-progress` (aim for one at a time)
+- `kanban:done`
+- `kanban:discussion`
 
 ## Contributing
 
