@@ -1,0 +1,8 @@
+# Example ~/.zshrc with managed block but pointing to old/stale location
+
+# MANAGED BY ODIN-UPDATE
+export ODIN_ROOT="/old/broken/path/to/Odin"
+export PATH="$ODIN_ROOT:$PATH"
+
+# Other config
+alias gs='git status'

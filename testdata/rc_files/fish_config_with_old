@@ -1,0 +1,9 @@
+# config.fish with old Odin setup
+
+set -gx PATH $HOME/bin $PATH
+
+# Old Odin
+set -gx ODIN_ROOT /legacy/path/Odin
+set -gx PATH $ODIN_ROOT $PATH
+
+alias la 'ls -A'

@@ -1,0 +1,9 @@
+# ~/.bashrc with old Odin configuration
+
+export PATH="$HOME/bin:$PATH"
+
+# Legacy Odin
+export ODIN_ROOT="/legacy/path/Odin"
+export PATH="$ODIN_ROOT:$PATH"
+
+alias la='ls -A'

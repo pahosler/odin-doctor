@@ -1,0 +1,6 @@
+# Example clean config.fish
+
+set -gx PATH $HOME/bin $PATH
+
+# Aliases
+alias ll 'ls -alF'

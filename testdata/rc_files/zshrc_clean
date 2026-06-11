@@ -1,0 +1,10 @@
+# Example clean ~/.zshrc with no Odin configuration
+
+export PATH="$HOME/bin:$PATH"
+
+# User aliases and settings
+alias ll='ls -alF'
+alias la='ls -A'
+
+# Some other exports
+export EDITOR=vim

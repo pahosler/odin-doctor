@@ -1,0 +1,9 @@
+# Example ~/.zshrc with old/unmanaged Odin configuration
+
+export PATH="$HOME/bin:$PATH"
+
+# Old Odin setup (pre-odin-doctor)
+export ODIN_ROOT="/Users/olduser/.local/Odin"
+export PATH="$ODIN_ROOT:$PATH"
+
+alias ll='ls -alF'
